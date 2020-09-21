@@ -1256,31 +1256,30 @@ section {
   background: #C19612;
   color: #fff;
 }
-
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact {
-  padding-top: 5px;
+.contact .info-wrap {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
 }
 
 .contact .info {
-  width: 100%;
   background: #fff;
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #C19612;
+  color: #1bbd36;
   float: left;
   width: 44px;
   height: 44px;
-  background: #ecf9f0;
+  border: 1px solid #1bbd36;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
 }
 
 .contact .info h4 {
@@ -1288,27 +1287,25 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #37423b;
+  color: #111;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #657a6d;
+  color: #444444;
 }
 
-.contact .info .email, .contact .info .phone {
-  margin-top: 40px;
-}
-
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #C19612;
+.contact .info:hover i {
+  background: #1bbd36;
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  padding: 30px;
   background: #fff;
 }
 
@@ -1340,7 +1337,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #705505;
+  background: #18d26e;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1360,20 +1357,21 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #705505;
+  border: 3px solid #18d26e;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
 
 .contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+  border-radius: 4px;
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #5fcf80;
+  border-color: #1bbd36;
 }
 
 .contact .php-email-form input {
@@ -1385,16 +1383,16 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #5fcf80;
+  background: #1bbd36;
   border: 0;
-  padding: 10px 35px;
+  padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 4px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #3ac162;
+  background: #2ae149;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1413,187 +1411,4 @@ section {
   100% {
     transform: rotate(360deg);
   }
-}
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-  color: white;
-  font-size: 14px;
-  background: #1A2B47;
-}
-
-#footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #f9faf9;
-}
-
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-contact h4 {
-  font-size: 22px;
-  margin: 0 0 30px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-weight: 700;
-}
-
-#footer .footer-top .footer-contact p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
-  color: #777777;
-}
-
-#footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #444444;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: #C19612;
-  font-size: 18px;
-  line-height: 1;
-}
-
-#footer .footer-top .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-#footer .footer-top .footer-links ul a {
-  color: #777777;
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
-}
-
-#footer .footer-top .footer-links ul a:hover {
-  text-decoration: none;
-  color: #C19612
-}
-
-#footer .footer-newsletter {
-  font-size: 15px;
-}
-
-#footer .footer-newsletter h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #444444;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 50px;
-  text-align: left;
-  border: 1px solid #e0e5e2;
-}
-
-#footer .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#footer .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  bottom: -1px;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px 2px 20px;
-  background:#C19612;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#footer .footer-newsletter form input[type="submit"]:hover {
-  background: #463501   
-}
-
-#footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
-}
-
-#footer .credits a {
-  color: #463501;
-  transition: 0.3s;
-}
-
-#footer .credits a:hover {
-  color: #C19612;
-}
-
-#footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #C19612;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#footer .social-links a:hover {
-  background:  #463501;
-  color: #fff;
-  text-decoration: none;
-}
-
-#map{
-  height: 400px;
-  width: 100%;
-  border-radius: 30px;
-}
-
-.btnEnviar {
-  border-color: #E8A100;
-  background-color: #E8A100;
-  color: #fff;
-  box-shadow: 0 0 40px 40px #C19612 inset, 0 0 0 0 #E8A100;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
-  border-radius: 30px;
-}
-.btnEnviar:hover {
-  box-shadow: 0 0 10px 0 #C19612 inset, 0 0 10px 4px #E8A100;
 }
